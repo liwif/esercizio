@@ -71,7 +71,7 @@ let drawBars = () => {
           .append('div')
           .attr('id', 'tooltip')
           .attr('data-date', item[0])
-          .text(item[0])
+          .text(item[0] + "-" + item[1])
        })
        .on('mouseleave', () => {
         d3.select('body').select('#tooltip').remove()
